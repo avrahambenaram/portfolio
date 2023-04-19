@@ -9,15 +9,13 @@ import {
   DiNodejs,
   DiGit,
 } from 'react-icons/di';
-import {
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa';
 import Image from 'next/image';
 
 import { Header } from '../organisms/Header';
 import { Presentation } from '../organisms/Presentation';
 import { Tecnology } from '../organisms/Tecnology';
+import { Service } from '../organisms/Service';
+import { Footer } from '../organisms/Footer';
 
 import developMobile from '../../../public/develop-mobile.svg';
 import developWeb from '../../../public/develop-web.svg';
@@ -25,10 +23,8 @@ import developApi from '../../../public/develop-api.svg';
 import nestjs from '../../../public/icons/nest.svg';
 import nextjs from '../../../public/icons/next.svg';
 import tailwindcss from '../../../public/icons/tailwindcss.svg';
-import Link from 'next/link';
-import { Service } from '../organisms/Service';
 
-export function Landing() {
+export function LandingTemplate() {
 
   const tecnologies = [
     {
@@ -163,27 +159,7 @@ export function Landing() {
         <br/>
         <br/>
       </main>
-      <footer className='w-full h-10 bg-gray-600 px-10 flex justify-between items-center'>
-        <div className='flex items-center gap-2'>
-          <a href='https://github.com/avrahambenaram' target='_blank'>
-            <FaGithub
-              size={24}
-              color='#fff'
-            />
-          </a>
-          <a href='https://www.linkedin.com/in/avraham-ben-aram-321a71208/' target='_blank'>
-            <FaLinkedin
-              size={24}
-              color='#fff'
-            />
-          </a>
-        </div>
-        <p className='text-white'>
-          Desenvolvido por <span className='text-emerald-500'>
-            <Link href='/'>Avraham</Link>
-          </span>
-        </p>
-      </footer>
+      <Footer/>
     </>
   )
 }
