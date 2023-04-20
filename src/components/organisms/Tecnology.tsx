@@ -7,6 +7,7 @@ export interface TecnologyProps {
   Icon?: () => JSX.Element
 }
 
+// TODO: Remove teecnology % and % bar
 export function Tecnology({ title, complete, ReactIcon, Icon }: TecnologyProps) {
   return (
     <div className='w-72 md:w-96 bg-slate-600 p-4 rounded-lg flex flex-col gap-5 transition-all hover:scale-110'>
