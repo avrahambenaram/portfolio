@@ -9,12 +9,14 @@ export function Footer() {
           <FaGithub
             size={24}
             color='#fff'
+            className='hover:fill-emerald-500 transition-all'
           />
         </a>
         <a href='https://www.linkedin.com/in/avraham-ben-aram-321a71208/' target='_blank'>
           <FaLinkedin
             size={24}
             color='#fff'
+            className='hover:fill-emerald-500 transition-all'
           />
         </a>
       </div>
