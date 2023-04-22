@@ -5,9 +5,6 @@ export function ContactTemplate() {
   return (
     <>
       <Header/>
-      <br/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   )

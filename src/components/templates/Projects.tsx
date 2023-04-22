@@ -5,9 +5,6 @@ export function ProjectsTemplate() {
   return (
     <>
       <Header/>
-      <br/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   )

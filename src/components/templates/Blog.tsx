@@ -5,9 +5,6 @@ export function BlogTemplate() {
   return (
     <>
       <Header/>
-      <br/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   )
