@@ -13,6 +13,7 @@ import Image from 'next/image';
 
 import { Header } from '../organisms/Header';
 import { Presentation } from '../organisms/Presentation';
+import { Project } from '../organisms/Project';
 import { Tecnology } from '../organisms/Tecnology';
 import { Service } from '../organisms/Service';
 import { Footer } from '../organisms/Footer';
@@ -113,12 +114,45 @@ export function LandingTemplate() {
   return (
     <>
       <Header/>
+      <br/>
       <main className='w-full'>
-        <br/>
-        <br/>
-        <br/>
         <Presentation/>
         <br/>
+        <br/>
+        <br/>
+        <section>
+          <h3 className='text-center text-white text-xl font-semibold'>Meus projetos</h3>
+          <br/>
+          <div className='flex flex-wrap gap-10 justify-center'>
+            <Project
+              project={{
+                id: 'any_project_id',
+                name: 'NLW Habits',
+                previewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate turpis venenatis mi vulputate ornare.',
+                external: 'external_project_link',
+                github: 'project_repository',
+              }}
+            />
+            <Project
+              project={{
+                id: 'any_project_id',
+                name: 'NLW Habits',
+                previewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate turpis venenatis mi vulputate ornare.',
+                external: '',
+                github: 'project_repository',
+              }}
+            />
+            <Project
+              project={{
+                id: 'any_project_id',
+                name: 'NLW Habits',
+                previewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate turpis venenatis mi vulputate ornare.',
+                external: 'external_project_link',
+                github: '',
+              }}
+            />
+          </div>
+        </section>
         <br/>
         <br/>
         <section>
