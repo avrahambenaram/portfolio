@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { HeaderPopover } from './HeaderPopover';
+
 export function Header() {
   return (
     <>
@@ -7,7 +9,8 @@ export function Header() {
         <h1 className='text-xl hover:text-emerald-400'>
           <Link href='/'>Avraham</Link>
         </h1>
-        <nav>
+        <nav className='flex items-center gap-4'>
+          <HeaderPopover/>
           <ul className='flex gap-2'>
             <li className='hover:text-emerald-400'>
               <Link href='/blog'>Blog</Link>
