@@ -1,15 +1,14 @@
 import {
-  DiJsBadge,
   DiPython,
-  DiHtml5,
-  DiCss3,
   DiReact,
   DiMysql,
   DiPostgresql,
-  DiNodejs,
   DiGit,
+  DiDocker,
 } from 'react-icons/di';
+import { FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Header } from '../organisms/Header';
 import { Presentation } from '../organisms/Presentation';
@@ -29,58 +28,23 @@ export function LandingTemplate() {
 
   const tecnologies = [
     {
-      title: 'HTML5',
-      complete: 1,
-      reactIcon: DiHtml5,
-    },
-    {
-      title: 'CSS',
-      complete: 1,
-      reactIcon: DiCss3,
-    },
-    {
-      title: 'Javascript',
-      complete: 1,
-      reactIcon: DiJsBadge,
-    },
-    {
-      title: 'Python',
-      complete: .8,
-      reactIcon: DiPython,
-    },
-    {
       title: 'React',
-      complete: .9,
       reactIcon: DiReact,
     },
     {
       title: 'React Native',
-      complete: .9,
       reactIcon: DiReact,
-    },
-    {
-      title: 'Git',
-      complete: .9,
-      reactIcon: DiGit,
-    },
-    {
-      title: 'MySQL',
-      complete: .6,
-      reactIcon: DiMysql,
-    },
-    {
-      title: 'PostgreSQL',
-      complete: .5,
-      reactIcon: DiPostgresql,
-    },
-    {
-      title: 'NodeJS',
-      complete: .9,
-      reactIcon: DiNodejs,
+    }, {
+      title: 'Tailwind CSS',
+        icon: () => <Image
+        src={tailwindcss}
+        alt='Tailwind CSS'
+        width={36}
+        height={36}
+      />
     },
     {
       title: 'NestJS',
-      complete: .65,
         icon: () => <Image
         src={nestjs}
         alt='NestJS'
@@ -90,23 +54,29 @@ export function LandingTemplate() {
     },
     {
       title: 'NextJS',
-      complete: .75,
         icon: () => <Image
         src={nextjs}
         alt='NextJS'
         width={36}
         height={36}
       />
+    }, {
+      title: 'Python',
+      reactIcon: DiPython,
+    }, {
+      title: 'Git',
+      reactIcon: DiGit,
+    }, {
+      title: 'MySQL',
+      reactIcon: DiMysql,
     },
     {
-      title: 'Tailwind CSS',
-      complete: .85,
-        icon: () => <Image
-        src={tailwindcss}
-        alt='Tailwind CSS'
-        width={36}
-        height={36}
-      />
+      title: 'PostgreSQL',
+      reactIcon: DiPostgresql,
+    },
+    {
+      title: 'Docker',
+      reactIcon: DiDocker,
     },
   ]
 
@@ -152,6 +122,17 @@ export function LandingTemplate() {
               }}
             />
           </div>
+          <div className='w-full mt-10 flex justify-center items-center'>
+            <Link
+              href='projects'
+              className='text-white bg-emerald-500 hover:bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all rounded w-28 py-2 flex justify-center items-center gap-2'
+            >
+              <span>
+                Ver todos
+              </span>
+              <FaArrowRight size={18}/>
+            </Link>
+          </div>
         </section>
         <br/>
         <br/>
@@ -163,7 +144,6 @@ export function LandingTemplate() {
               <Tecnology
                 key={tecnology.title}
                 title={tecnology.title}
-                complete={tecnology.complete}
                 Icon={tecnology.icon}
                 ReactIcon={tecnology.reactIcon}
               />
