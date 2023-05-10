@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /app
-npm install
+/usr/bin/npm install
+/usr/bin/npm run build
