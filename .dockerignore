@@ -1,0 +1,9 @@
+node_modules
+scripts
+.idea
+.vscode
+.next
+Dockerfile
+.gitignore
+.eslintrc.json
+appspec.yml
