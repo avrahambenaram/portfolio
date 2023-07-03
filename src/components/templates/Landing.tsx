@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 import { Header } from '../organisms/Header';
 import { Presentation } from '../organisms/Presentation';
-import { Project } from '../organisms/Project';
+import { ProjectCard } from '../organisms/ProjectCard';
 import { Tecnology } from '../organisms/Tecnology';
 import { Service } from '../organisms/Service';
 import { Footer } from '../organisms/Footer';
@@ -94,7 +94,7 @@ export function LandingTemplate() {
           <h3 className='text-center text-white text-xl font-semibold'>Meus projetos</h3>
           <br/>
           <div className='flex flex-wrap gap-10 justify-center'>
-            <Project
+            <ProjectCard
               project={{
                 id: 'any_project_id',
                 name: 'NLW Habits',
@@ -103,7 +103,7 @@ export function LandingTemplate() {
                 github: 'project_repository',
               }}
             />
-            <Project
+            <ProjectCard
               project={{
                 id: 'any_project_id',
                 name: 'NLW Habits',
@@ -112,7 +112,7 @@ export function LandingTemplate() {
                 github: 'project_repository',
               }}
             />
-            <Project
+            <ProjectCard
               project={{
                 id: 'any_project_id',
                 name: 'NLW Habits',
