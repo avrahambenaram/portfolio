@@ -19,7 +19,7 @@ export function HeaderPopover() {
         </button>
       </Popover.Trigger>
       <Popover.Portal>
-        <Popover.Content className='w-44 h-72 p-2 bg-slate-600 rounded text-white shadow-sm shadow-black' sideOffset={5}>
+        <Popover.Content className='w-44 h-44 p-2 bg-slate-600 rounded text-white shadow-sm shadow-black' sideOffset={5}>
 
           <Popover.Close aria-label='Close'>
             <Cross2Icon
@@ -46,7 +46,7 @@ export function HeaderPopover() {
               </div>
             </section>
 
-            <section>
+            {/** <section>
               <h3 className='text-lg font-semibold'>Idioma</h3>
               <div className='flex items-center gap-2'>
                 <button>
@@ -65,8 +65,9 @@ export function HeaderPopover() {
                 </button>
               </div>
             </section>
-          </div>
+			 **/}
 
+          </div>
           <Popover.Arrow />
         </Popover.Content>
       </Popover.Portal>
