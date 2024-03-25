@@ -1,5 +1,5 @@
-import { Project } from "@/domain/entities/Project";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { Project } from '@/domain/entities/Project';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 export function ProjectLinks({ project }: { project: Project }) {
   return (

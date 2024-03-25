@@ -50,6 +50,7 @@ export function ProjectTemplate() {
               id: '',
               name: '',
               previewDescription: '',
+              description: ''
             }}/>
           </div>
         </div>

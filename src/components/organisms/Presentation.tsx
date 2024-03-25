@@ -39,6 +39,7 @@ export function Presentation() {
           <p>NestJS | NextJS | React-Native</p>
         </div>
       </section>
+
       <section className='text-white w-full px-1/10 md:w-1/3 md:px-0'>
         <h3 className='text-lg font-semibold'>Sobre mim</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate turpis venenatis mi vulputate ornare. Pellentesque at scelerisque odio, et sodales lacus. Sed interdum dolor in odio blandit, a porttitor ex accumsan. Duis facilisis tristique elit, vel viverra justo dictum blandit. Pellentesque feugiat, est ac venenatis blandit, tellus orci fringilla nibh, eget consectetur erat neque at lacus. Aenean in semper nunc, eu lacinia odio. Integer tincidunt feugiat velit, a consectetur mi interdum at.</p>
